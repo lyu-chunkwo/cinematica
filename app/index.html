@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="menu-scroll">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img class="logo__img" src="images/header/logo.png" alt="logotype">
+          </a>
+        </div>
+
+        <nav class="menu">
+          <button class="menu__mobile" type="button">
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Афиша</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="films.html">Фильмы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О кинотеатре</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__numbers">
+          <a class="header__number" href="tel:+996312000000">+996 312 00-00-00</a>
+          <a class="header__number" href="tel:+996555000000">+996 555 00-00-00</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="slider">
+      <div class="container-wide">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Дюна</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/1.jpg" alt="фильм" title="Дюна"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/1.jpg" alt="фильм" title="Дюна"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Семейка Адамс 2</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/2.jpg" alt="фильм" title="Семейка Адамс 2"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/2.jpg" alt="фильм" title="Семейка Адамс 2">
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Хэллоуин убивает</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/3.jpg" alt="фильм" title="Хэллоуин"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/3.jpg" alt="фильм" title="Хэллоуин"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Последняя дуэль</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/4.jpg" alt="фильм" title="Последняя дуэль"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/4.jpg" alt="фильм" title="Последняя дуэль">
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Где деньги?</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/5.jpg" alt="фильм" title="Где деньги?"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/5.jpg" alt="фильм" title="Где деньги?"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Неисправимый Рон</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/6.jpg" alt="фильм" title="Что не так с Роном?"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/6.jpg" alt="фильм"
+                title="Что не так с Роном?"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Джим Пуговка и чёртова дюжина</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/7.jpg" alt="фильм" title="Джим и чёртова дюжина"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/7.jpg" alt="фильм"
+                title="Джим и чёртова дюжина"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Начать с нуля</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/8.jpg" alt="фильм" title="Начать с нуля"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/8.jpg" alt="фильм" title="Начать с нуля">
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Человек который продал свою кожу</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/9.jpg" alt="фильм"
+                title="Человек который продал свою кожу"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/9.jpg" alt="фильм"
+                title="Человек который продал свою кожу"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Не время умирать</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/10.jpg" alt="фильм" title="Не время умирать"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/10.jpg" alt="фильм" title="Не время умирать">
+            </div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Тайна парка развлечений</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/11.jpg" alt="фильм" title="Тайна парка развлечений"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/11.jpg" alt="фильм"
+                title="Тайна парка развлечений"></div>
+          </li>
+          <li class="slider__item">
+            <div class="slider__info">
+              <div class="slider__name">Веном 2</div>
+              <button class="slider__sessions-link">26 октября</button>
+              <div class="slider__sessions-info">
+                <p class="slider__next-session">Ближайшие сеансы</p>
+                <div class="slider__session-time">
+                  <span>15:30</span>
+                  <span>18:30</span>
+                  <span>21:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__img"><img src="images/slider/12.jpg" alt="фильм" title="Веном 2"></div>
+            <div class="slider__img-mobile"><img src="images/slider/mobile/12.jpg" alt="фильм" title="Веном 2"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="slider-bottom">
+        <div class="container">
+          <ul class="slider-bottom__list">
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/1.jpg" alt="фильм" title="Дюна">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/2.jpg" alt="фильм" title="Семейка Адамс 2">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/3.jpg" alt="фильм" title="Хэллоуин убивает">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/4.jpg" alt="фильм" title="Последняя дуэль">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/5.jpg" alt="фильм" title="Где деньги?">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/6.jpg" alt="фильм" title="Неисправимый Рон">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/7.jpg" alt="фильм"
+                  title="Джим и чёртова дюжина">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/8.jpg" alt="фильм" title="Начать с нуля">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/9.jpg" alt="фильм"
+                  title="Человек который продал свою кожу">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/10.jpg" alt="фильм"
+                  title="Не время умирать">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/11.jpg" alt="фильм"
+                  title="Тайна парка развлечений">
+              </li>
+            </div>
+            <div class="slider-bottom__box">
+              <li class="slider-bottom__item">
+                <img class="slider-bottom__img" src="images/slider/thubnail/12.jpg" alt="фильм" title="Веном 2">
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="tabs">
+      <div class="tabs__wrapper">
+        <div class="container">
+          <div class="tabs__top">
+            <ul class="tabs__top-list">
+              <li class="tabs__top-item active">
+                <a class="tabs__top-btn active" href="#tab-1">
+                  <span class="tabs__top-span">Сегодня</span>
+                  <span class="tabs__top-span">26 октября</span>
+                </a>
+              </li>
+              <li class="tabs__top-item">
+                <a class="tabs__top-btn" href="#tab-2">
+                  <span class="tabs__top-span">Завтра</span>
+                  <span class="tabs__top-span">27 октября</span>
+                </a>
+              </li>
+              <li class="tabs__top-item">
+                <a class="tabs__top-btn" href="#tab-1">
+                  <span class="tabs__top-span">Суббота</span>
+                  <span class="tabs__top-span">28 октября</span>
+                </a>
+              </li>
+              <li class="tabs__top-item">
+                <a class="tabs__top-btn" href="#tab-2">
+                  <span class="tabs__top-span">Воскресенье</span>
+                  <span class="tabs__top-span">29 октября</span>
+                </a>
+              </li>
+              <li class="tabs__top-item">
+                <a class="tabs__top-btn" href="#tab-1">
+                  <span class="tabs__top-span">Понедельник</span>
+                  <span class="tabs__top-span">30 октября</span>
+                </a>
+              </li>
+              <li class="tabs__top-item">
+                <a class="tabs__top-btn" href="#tab-2">
+                  <span class="tabs__top-span">Вторник</span>
+                  <span class="tabs__top-span">1 ноября</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="tabs__content">
+          <ul class="tabs__content-list active" id="tab-1">
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Веном 2</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="venom2.html">
+                    <img class="tabs__content-img" src="images/tabs/10.jpg" alt="постер к фильму" title="Веном 2">
+                  </a>
+                  <a class="about-link" href="venom2.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Неисправимый Рон</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="ron.html">
+                    <img class="tabs__content-img" src="images/tabs/5.jpg" alt="постер к фильму"
+                      title="Неисправимый Рон">
+                  </a>
+                  <a class="about-link" href="ron.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Не время умирать</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="bond.html">
+                    <img class="tabs__content-img" src="images/tabs/1.jpg" alt="постер к фильму"
+                      title="Не время умирать ">
+                  </a>
+                  <a class="about-link" href="bond.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Последняя дуэль</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="duel.html">
+                    <img class="tabs__content-img" src="images/tabs/9.jpg" alt="постер к фильму"
+                      title="Последняя дуэль">
+                  </a>
+                  <a class="about-link" href="duel.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Хэллоуин убивает</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="halloween.html">
+                    <img class="tabs__content-img" src="images/tabs/12.jpg" alt="постер к фильму"
+                      title="Хэллоуин убивает">
+                  </a>
+                  <a class="about-link" href="halloween.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Начать с нуля</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="begin.html">
+                    <img class="tabs__content-img" src="images/tabs/11.jpg" alt="постер к фильму" title="Начать с нуля">
+                  </a>
+                  <a class="about-link" href="begin.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="tabs__content-list" id="tab-2">
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Джим Пуговка и чёртова дюжина</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="jim.html">
+                    <img class="tabs__content-img" src="images/tabs/3.jpg" alt="постер к фильму"
+                      title="Неисправимый Рон">
+                  </a>
+                  <a class="about-link" href="jim.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Человек который продал свою кожу</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="skin.html">
+                    <img class="tabs__content-img" src="images/tabs/8.jpg" alt="постер к фильму" title="Веном 2">
+                  </a>
+                  <a class="about-link" href="skin.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Тайна парка развлечений</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="park.html">
+                    <img class="tabs__content-img" src="images/tabs/7.jpg" alt="постер к фильму"
+                      title="Последняя дуэль">
+                  </a>
+                  <a class="about-link" href="park.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Где деньги?</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="money.html">
+                    <img class="tabs__content-img" src="images/tabs/6.jpg" alt="постер к фильму"
+                      title="Хэллоуин убивает">
+                  </a>
+                  <a class="about-link" href="money.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Семейка Адамс 2</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="adams.html">
+                    <img class="tabs__content-img" src="images/tabs/4.jpg" alt="постер к фильму" title="Начать с нуля">
+                  </a>
+                  <a class="about-link" href="adams.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>18:50</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>20:20</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>21:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tabs__content-item">
+              <h2 class="tabs__content-title">Дюна</h2>
+              <div class="tabs__content-inner">
+                <div class="tabs__content-image">
+                  <a href="duna.html">
+                    <img class="tabs__content-img" src="images/tabs/2.jpg" alt="постер к фильму"
+                      title="Не время умирать ">
+                  </a>
+                  <a class="about-link" href="duna.html">О фильме</a>
+                </div>
+
+                <ul class="tabs__content-sessions">
+                  <li class="tabs__content-session tabs__content-session--top">
+                    <span>Время</span>
+                    <span>Зал</span>
+                    <span>Цена</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>10:00</span>
+                    <span>Красный зал</span>
+                    <span>140 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:00</span>
+                    <span>Большой зал</span>
+                    <span>180 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>11:30</span>
+                    <span>Зелёный зал</span>
+                    <span>220 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>12:30</span>
+                    <span>Красный зал</span>
+                    <span>240 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>14:30</span>
+                    <span>Большой зал</span>
+                    <span>280 сом</span>
+                  </li>
+                  <li class="tabs__content-session">
+                    <span>16:10</span>
+                    <span>Зелёный зал</span>
+                    <span>320 сом</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement">
+      <div class="announcement__line">
+        <h2 class="title announcement__title">Скоро на экранах</h2>
+      </div>
+      <div class="container">
+        <div class="announcement__content">
+          <ul class="announcement__items">
+            <li class="announcement__item">
+              <a href="pilot.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/1.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Летчик
+              </h3>
+              <a class="about-link about-link--announcement" href="pilot.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="own-war.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/2.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Своя война
+              </h3>
+              <a class="about-link about-link--announcement" href="own-war.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="ghostbusters.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/3.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Охотники за привидениями
+              </h3>
+              <a class="about-link about-link--announcement" href="ghostbusters.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="scare-us.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/4.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Страшные истории для рассказа незнакомцам
+              </h3>
+              <a class="about-link about-link--announcement" href="scare-us.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="night-in-soho.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/5.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Прошлой ночью в Сохо
+              </h3>
+              <a class="about-link about-link--announcement" href="night-in-soho.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="encanto.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/6.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Энканто
+              </h3>
+              <a class="about-link about-link--announcement" href="encanto.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="eternals.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/7.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Вечные
+              </h3>
+              <a class="about-link about-link--announcement" href="eternals.html">О фильме</a>
+            </li>
+            <li class="announcement__item">
+              <a href="gucci.html" class="announcement__img-link">
+                <img class="announcement__img" src="images/announcement/8.jpg" alt="movie poster">
+              </a>
+              <h3 class="announcement__moviename">
+                Дом Gucci
+              </h3>
+              <a class="about-link about-link--announcement" href="gucci.html">О фильме</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img class="logo__img" src="images/header/logo.png" alt="logotype">
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="index.html">Афиша</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="films.html">Фильмы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="about.html">О кинотеатре</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__copy">
+        © 2021 Все права защищены
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

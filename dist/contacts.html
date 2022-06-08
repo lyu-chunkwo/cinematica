@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema | Контакты</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="menu-scroll">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img class="logo__img" src="images/header/logo.png" alt="logotype">
+          </a>
+        </div>
+
+        <nav class="menu">
+          <button class="menu__mobile" type="button">
+            <span></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Афиша</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="films.html">Фильмы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О кинотеатре</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__numbers">
+          <a class="header__number" href="tel:+996312000000">+996 312 00-00-00</a>
+          <a class="header__number" href="tel:+996555000000">+996 555 00-00-00</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="title contacts__title">Контакты</h2>
+        <div class="contacts__inner">
+          <div class="contacts__map">
+            <div id="map" style="width: 100%; height: 450px;">
+              <script>
+                DG.then(function () {
+                  var map,
+                    myIcon,
+                    myDivIcon;
+
+                  map = DG.map('map', {
+                    center: [42.87712772598521, 74.57689046859743],
+                    zoom: 16,
+                    touchZoom: false,
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    boxZoom: false,
+                    geoclicker: false,
+                    zoomControl: false,
+                    fullscreenControl: false
+                  });
+
+                  myIcon = DG.icon({
+                    iconUrl: 'images/contacts/marker2.jpg',
+                    iconSize: [168, 64]
+                  });
+                  DG.marker([42.87752772598521, 74.57689046859743], {
+                    icon: myIcon
+                  }).addTo(map);
+
+                  myDivIcon = DG.divIcon({
+                    iconSize: [0, 0],
+                    html: '<b style="color:blue;"></b>'
+                  });
+                  DG.marker([42.87712772598521, 74.57689046859743], {
+                    icon: myDivIcon
+                  }).addTo(map);
+                });
+              </script>
+            </div>
+          </div>
+
+          <div class="contacts__info">
+            <div class="contacts__phones">
+              <a class="contacts__phone" href="tel:+996312000000">+996 312 00-00-00</a>
+              <a class="contacts__phone" href="tel:+996502000000">+996 502 00-00-00</a>
+            </div>
+
+            <address class="contacts__address">
+              <p>Адрес:</p>
+              <p>720010 пр. Чуй 184 г. Бишкек</p>
+              <a class="contacts__email" href="mailto:cinema@kinomir.kg">cinema@kinomir.kg</a>
+            </address>
+
+            <div class="contacts__worktime">
+              <p>
+                Режим работы:
+              </p>
+              <p>
+                с 9:00 до 24:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img class="logo__img" src="images/header/logo.png" alt="logotype">
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="index.html">Афиша</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="films.html">Фильмы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="about.html">О кинотеатре</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__copy">
+        © 2021 Все права защищены
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
