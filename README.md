@@ -1,6 +1,6 @@
 # [Cinema](https://lyu-chunkwo.github.io/alpha/dist/index.html) - Сайт кинотеатра.
 
-[<img src="https://lyu-chunkwo.github.io/cinematica/dist/images/foreadme/cinema.jpg" alt="img">](https://lyu-chunkwo.github.io/cinematica/dist/index.html)
+[<img src="https://lyu-chunkwo.github.io/cinematica/dist/images/foreadme/cinema.JPG" alt="img">](https://lyu-chunkwo.github.io/cinematica/dist/index.html)
 
 
 ---
