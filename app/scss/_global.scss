@@ -1,0 +1,338 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  @extend %montserrat-400;
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 100%;
+
+  // ! Выключает скролл при адаптивном меню
+  @media (max-width: 948px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+// ! Скрывает заголовки и т.д. для СЕО
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo {
+  width: 165px;
+  text-align: center;
+  margin-right: 20px;
+
+  @media (max-width: 454px) {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    color: $accent;
+    font-size: 49px;
+    line-height: 1;
+    margin-bottom: -7px;
+    display: block;
+    @extend %ukrainianbrush-400;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    line-height: 1;
+    color: $accent;
+    @extend %ptsans-400;
+    position: relative;
+    padding: 0 55px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      background-color: $accent;
+      top: 9px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+.menu {
+  margin-right: 20px;
+  @media (max-width: 856px) {
+    order: 1;
+  }
+
+  @media (max-width: 454px) {
+    order: 0;
+  }
+
+  &__mobile {
+    display: none;
+
+    @media (max-width: 856px) {
+      display: block;
+      width: 40px;
+      height: 28px;
+      border: none;
+      background-color: transparent;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+
+      span {
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+        display: block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+        transition: all 0.5s;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(45deg);
+        top: 15px;
+        transition: transform 0.5s;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 11px;
+        transition: transform 0.5s;
+      }
+
+      & span {
+        transform: scale(0);
+      }
+    }
+
+    @media (max-width: 452px) {
+      position: relative;
+      top: -15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 856px) {
+      position: absolute;
+      left: 0;
+      top: 90px;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      z-index: 55;
+      background-color: $accent;
+      padding: 20px 15px 0 15px;
+      transform: translateX(-200%);
+      transition: transform 0.5s;
+
+      &.active {
+        transform: translateX(0%);
+      }
+    }
+
+    @media (max-width: 452px) {
+      top: 158px;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    @media (max-width: 856px) {
+      margin: 0 0 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #fff;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $accent;
+    font-size: 16px;
+
+    &:hover {
+      color: $accent;
+    }
+
+    @media (max-width: 856px) {
+      color: #fff;
+      font-weight: 700;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.about-link {
+  font-size: 12px;
+  color: $accent;
+  padding-bottom: 2px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $accent;
+    bottom: 3px;
+    left: 0;
+  }
+
+  &:hover {
+    color: $accent;
+
+    &::after {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  }
+
+  &--announcement {
+    text-align: center;
+    display: block;
+    width: 65px;
+    margin: 0 auto;
+  }
+
+  &--films {
+    width: 65px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.breadcrumbs {
+  padding: 40px 0;
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 17px;
+    padding-right: 17px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: #d2d2d2;
+      border-radius: 50%;
+      right: 0;
+      top: 11px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $text;
+  }
+}
