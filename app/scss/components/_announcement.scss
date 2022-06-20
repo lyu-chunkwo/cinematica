@@ -1,0 +1,41 @@
+.announcement {
+  margin-bottom: 50px;
+
+  &__line {
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid $accent;
+  }
+  &__title {
+    max-width: 1185px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__item {
+    margin: 0 15px 40px;
+  }
+  
+  &__img {
+    margin-bottom: 10px;
+    width: 260px;
+    height: 386px;
+    object-fit: cover;
+  }
+  
+  &__moviename {
+    font-size: 16px;
+    font-weight: 700;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
